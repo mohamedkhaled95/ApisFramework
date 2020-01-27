@@ -1,0 +1,921 @@
+<html>
+<head>
+<title>TestNG:  Load profile by traffic code happy Scenarios</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Load profile by traffic code happy Scenarios</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 14 09:10:43 GST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3168 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Authorization
+Content-Type
+Accept, [+]#prev_headers_res[1]:Authorization
+application/json
+/*/, {
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": null,
+    "mobileNo": "971502633426"
+    
+}, 400, messageEn
+messageAr, Apologies, Traffic file should be entered
+عذراً، يجب إدخال رقم الملف المروري, string
+string<br/>
+<a href="#Output-1431816315" onClick='toggleBox("Output-1431816315", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1431816315" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1431816315">
+Status Code :200</br> Response Body:</br></br>Response Headers:</br>Date=Tue, 14 Jan 2020 05:09:02 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1AN8BlG6yGbLxI^AyW0008l_0002D^
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Content-Length=0
+Connection=close<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: [Step 3]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1NzkwNjQ5NDF9.Z13UaVDFfTuOtoFy9fRA_4QQCWWAGEsR0-sTuCsp2m2bWXYpBRbowJQ2Cby8sRezkec87vpSiifGzyt1_hlp6g&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+ &lt;Accept&gt; : &lt;/*/&gt;
+************************************************************************************
+Request body: 
+ &lt;{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;: null,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}&gt;
+************************************************************************************
+Expected status code: 
+400
+************************************************************************************
+Json paths to check: 
+ &lt;messageEn&gt; : &lt;string&gt; : &lt;Apologies, Traffic file should be entered&gt;
+ &lt;messageAr&gt; : &lt;string&gt; : &lt;عذراً، يجب إدخال رقم الملف المروري&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Tue, 14 Jan 2020 05:09:02 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1AN8BlG6yGbLxI^AyW0008l_0002D^
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Content-Length=0
+Connection=close
+
+Cookies:
+{}
+
+Body:
+
+ expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1431816315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1431816315'><pre>java.lang.AssertionError: [Step 3]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1NzkwNjQ5NDF9.Z13UaVDFfTuOtoFy9fRA_4QQCWWAGEsR0-sTuCsp2m2bWXYpBRbowJQ2Cby8sRezkec87vpSiifGzyt1_hlp6g&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+ &lt;Accept&gt; : &lt;/*/&gt;
+************************************************************************************
+Request body: 
+ &lt;{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;: null,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}&gt;
+************************************************************************************
+Expected status code: 
+400
+************************************************************************************
+Json paths to check: 
+ &lt;messageEn&gt; : &lt;string&gt; : &lt;Apologies, Traffic file should be entered&gt;
+ &lt;messageAr&gt; : &lt;string&gt; : &lt;عذراً، يجب إدخال رقم الملف المروري&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Tue, 14 Jan 2020 05:09:02 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1AN8BlG6yGbLxI^AyW0008l_0002D^
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Content-Length=0
+Connection=close
+
+Cookies:
+{}
+
+Body:
+
+ expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3234e239</td></tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Authorization
+Content-Type
+Accept, [+]#prev_headers_res[1]:Authorization
+application/json
+/*/, {
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": 1191,
+    "mobileNo": "971502633426"
+    
+}, 400, messageEn
+messageAr, Apologies, Traffic file number is number of 8 digits starts with 1 or 5
+عذراً، ملف المرور يجب أن يكون رقم من 8 خانات يبدأ بـ 1 أو 5, string
+string<br/>
+<a href="#Output-994457921" onClick='toggleBox("Output-994457921", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-994457921" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-994457921">
+Status Code :200</br> Response Body:</br></br>Response Headers:</br>Date=Tue, 14 Jan 2020 05:09:02 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1AN92^K6yGbLxI^AyW0008l_000Anv
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Content-Length=0
+Connection=close<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: [Step 4]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1NzkwNjQ5NDF9.Z13UaVDFfTuOtoFy9fRA_4QQCWWAGEsR0-sTuCsp2m2bWXYpBRbowJQ2Cby8sRezkec87vpSiifGzyt1_hlp6g&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+ &lt;Accept&gt; : &lt;/*/&gt;
+************************************************************************************
+Request body: 
+ &lt;{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;: 1191,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}&gt;
+************************************************************************************
+Expected status code: 
+400
+************************************************************************************
+Json paths to check: 
+ &lt;messageEn&gt; : &lt;string&gt; : &lt;Apologies, Traffic file number is number of 8 digits starts with 1 or 5&gt;
+ &lt;messageAr&gt; : &lt;string&gt; : &lt;عذراً، ملف المرور يجب أن يكون رقم من 8 خانات يبدأ بـ 1 أو 5&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Tue, 14 Jan 2020 05:09:02 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1AN92^K6yGbLxI^AyW0008l_000Anv
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Content-Length=0
+Connection=close
+
+Cookies:
+{}
+
+Body:
+
+ expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace994457921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace994457921'><pre>java.lang.AssertionError: [Step 4]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1NzkwNjQ5NDF9.Z13UaVDFfTuOtoFy9fRA_4QQCWWAGEsR0-sTuCsp2m2bWXYpBRbowJQ2Cby8sRezkec87vpSiifGzyt1_hlp6g&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+ &lt;Accept&gt; : &lt;/*/&gt;
+************************************************************************************
+Request body: 
+ &lt;{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;: 1191,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}&gt;
+************************************************************************************
+Expected status code: 
+400
+************************************************************************************
+Json paths to check: 
+ &lt;messageEn&gt; : &lt;string&gt; : &lt;Apologies, Traffic file number is number of 8 digits starts with 1 or 5&gt;
+ &lt;messageAr&gt; : &lt;string&gt; : &lt;عذراً، ملف المرور يجب أن يكون رقم من 8 خانات يبدأ بـ 1 أو 5&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Tue, 14 Jan 2020 05:09:02 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1AN92^K6yGbLxI^AyW0008l_000Anv
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Content-Length=0
+Connection=close
+
+Cookies:
+{}
+
+Body:
+
+ expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3234e239</td></tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Authorization
+Content-Type, [+]#prev_headers_res[1]:Authorization
+application/json, {
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo":  12050ks5a,
+    "mobileNo": "971502633426"
+    
+}, 400, messageEn
+messageAr, Apologies, please enter the traffic Number in number format
+عذراً،يرجى إدخال رقم الملف المروري بصيغة الأرقام فقط, string
+string<br/>
+<a href="#Output-858234188" onClick='toggleBox("Output-858234188", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-858234188" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-858234188">
+Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "JSON parse error: Unexpected character ('k' (code 107)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('k' (code 107)): was expecting comma to separate Object entries\n at [Source: (PushbackInputStream); line: 4, column: 29]",
+    "errorCategory": "103",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number"
+}</br>Response Headers:</br>Date=Tue, 14 Jan 2020 05:09:02 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1ANA8U66yGbLxI^AyW0008l_000559
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: [Step 5]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1NzkwNjQ5NDF9.Z13UaVDFfTuOtoFy9fRA_4QQCWWAGEsR0-sTuCsp2m2bWXYpBRbowJQ2Cby8sRezkec87vpSiifGzyt1_hlp6g&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+************************************************************************************
+Request body: 
+ &lt;{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;:  12050ks5a,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}&gt;
+************************************************************************************
+Expected status code: 
+400
+************************************************************************************
+Json paths to check: 
+ &lt;messageEn&gt; : &lt;string&gt; : &lt;Apologies, please enter the traffic Number in number format&gt;
+ &lt;messageAr&gt; : &lt;string&gt; : &lt;عذراً،يرجى إدخال رقم الملف المروري بصيغة الأرقام فقط&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Tue, 14 Jan 2020 05:09:02 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1ANA8U66yGbLxI^AyW0008l_000559
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;status&quot;: 400,
+    &quot;detail&quot;: &quot;JSON parse error: Unexpected character (&apos;k&apos; (code 107)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;k&apos; (code 107)): was expecting comma to separate Object entries\n at [Source: (PushbackInputStream); line: 4, column: 29]&quot;,
+    &quot;errorCategory&quot;: &quot;103&quot;,
+    &quot;path&quot;: &quot;/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&quot;
+}
+messageEn: is NULL
+ expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace858234188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace858234188'><pre>java.lang.AssertionError: [Step 5]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1NzkwNjQ5NDF9.Z13UaVDFfTuOtoFy9fRA_4QQCWWAGEsR0-sTuCsp2m2bWXYpBRbowJQ2Cby8sRezkec87vpSiifGzyt1_hlp6g&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+************************************************************************************
+Request body: 
+ &lt;{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;:  12050ks5a,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}&gt;
+************************************************************************************
+Expected status code: 
+400
+************************************************************************************
+Json paths to check: 
+ &lt;messageEn&gt; : &lt;string&gt; : &lt;Apologies, please enter the traffic Number in number format&gt;
+ &lt;messageAr&gt; : &lt;string&gt; : &lt;عذراً،يرجى إدخال رقم الملف المروري بصيغة الأرقام فقط&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Tue, 14 Jan 2020 05:09:02 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1ANA8U66yGbLxI^AyW0008l_000559
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;status&quot;: 400,
+    &quot;detail&quot;: &quot;JSON parse error: Unexpected character (&apos;k&apos; (code 107)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;k&apos; (code 107)): was expecting comma to separate Object entries\n at [Source: (PushbackInputStream); line: 4, column: 29]&quot;,
+    &quot;errorCategory&quot;: &quot;103&quot;,
+    &quot;path&quot;: &quot;/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&quot;
+}
+messageEn: is NULL
+ expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3234e239</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/api/sec/authenticate, POST, Content-Type, application/json, {"apiKey": "NY*p.p>93^P6<!s[Q7`(X5)Jc8kWD*:fJ[B)db#UXe)??Ttjx]",
+"username":"anonymous_user"
+	}
+	
+, 200, id_token, NULL, string<br/>
+<a href="#Output-1446022307" onClick='toggleBox("Output-1446022307", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1446022307" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1446022307">
+Status Code :200</br> Response Body:</br>{
+    "id_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1NzkwNjQ5NDF9.Z13UaVDFfTuOtoFy9fRA_4QQCWWAGEsR0-sTuCsp2m2bWXYpBRbowJQ2Cby8sRezkec87vpSiifGzyt1_hlp6g",
+    "tokenExpiry": "2020-01-15T09:09:01.000+0400",
+    "authorities": [
+        {
+            "authority": "ROLE_ANONYMOUS"
+        }
+    ]
+}</br>Response Headers:</br>Date=Tue, 14 Jan 2020 05:09:01 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+X-ORACLE-DMS-RID=0:1
+X-Content-Type-Options=nosniff
+X-ORACLE-DMS-ECID=005b1AN5KoC6yGbLxI^AyW0008l_0002DZ
+Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1NzkwNjQ5NDF9.Z13UaVDFfTuOtoFy9fRA_4QQCWWAGEsR0-sTuCsp2m2bWXYpBRbowJQ2Cby8sRezkec87vpSiifGzyt1_hlp6g
+X-XSS-Protection=1; mode=block
+X-Frame-Options=SAMEORIGIN
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3234e239</td></tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types, GET, Authorization, [+]#prev_headers_res[1]:Authorization, , 200, , , <br/>
+<a href="#Output-956268071" onClick='toggleBox("Output-956268071", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-956268071" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-956268071">
+Status Code :200</br> Response Body:</br>[
+    {
+        "id": 1,
+        "code": "1",
+        "description": {
+            "ar": "خدمات رخص القيادة",
+            "en": "Driving License Services"
+        },
+        "summary": {
+            "ar": "من خلال هذه الخدمة يمكنك إجراء العديد من الإجراءات مثل التقدم للحصول على رخصة قيادة جديدة, إستبدال رخصتك الأجنبية, إضافة فئة جديدة على رخصتك السابقة كما يمكنك التقدم بالحصول على شهادة خبرة بقيادة المركبات  ",
+            "en": "Use this service if you wish to obtain new UAE driving license, exchange your foreign driving license, add new category to your existing driving license or request for driving experience certificate"
+        },
+        "status": "ACTIVE",
+        "sortOrder": 1,
+        "services": [
+            {
+                "id": 1,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.LearningFileServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.LearningFileDetailDTO",
+                "code": 1,
+                "name": {
+                    "ar": "فتح ملف تعلم",
+                    "en": "Open Driving Learning File"
+                }
+            },
+            {
+                "id": 2,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingTestAppointmentServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingTestAppointmentDTO",
+                "code": 2,
+                "name": {
+                    "ar": "إصدار موعد فحص",
+                    "en": "Issue Driving Test Appointment"
+                }
+            },
+            {
+                "id": 3,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingTestAppointmentServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingTestAppointmentDTO",
+                "code": 3,
+                "name": {
+                    "ar": "تعديل موعد فحص",
+                    "en": "Update Driving Test Appointment"
+                }
+            },
+            {
+                "id": 4,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingTestAppointmentServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingTestAppointmentDTO",
+                "code": 4,
+                "name": {
+                    "ar": "إلغاء موعد فحص",
+                    "en": "Cancel Driving Test Appointment"
+                }
+            },
+            {
+                "id": 5,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.ForeignLicenseServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.ForeignLicenseDetailDTO",
+                "code": 5,
+                "name": {
+                    "ar": "تعريف رخصة قيادة سابقة",
+                    "en": "Define Foreign Driving License"
+                }
+            },
+            {
+                "id": 6,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.TrafficFileServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.TrafficFileDTO",
+                "code": 6,
+                "name": {
+                    "ar": "صرف رمز مروري في دبي",
+                    "en": "Issue Dubai Traffic Code"
+                }
+            },
+            {
+                "id": 7,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.HandbookServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.HandbookDetailDTO",
+                "code": 7,
+                "name": {
+                    "ar": "شراء كتيب تعلم",
+                    "en": "Buy hand book"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "code": "2",
+        "description": {
+            "ar": "خدمات تصاريح القيادة المهنية",
+            "en": "Professional Driving Permit Service"
+        },
+        "summary": {
+            "ar": "القدم للحصول على تصريح قيادة صحراوية, الخ",
+            "en": "Apply for desert driving permits, etc."
+        },
+        "status": "UNDER_DEVELOPMENT",
+        "sortOrder": 2
+    }
+]</br>Response Headers:</br>Date=Tue, 14 Jan 2020 05:09:02 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1AN7IOV6yGbLxI^AyW0008l_000558
+X-ORACLE-DMS-ECID=005b1AN7IOV6yGbLxI^AyW0008l_000558
+X-XSS-Protection=1; mode=block
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Link=</api/sct/application-types?page=0&size=20>; rel="last",</api/sct/application-types?page=0&size=20>; rel="first"
+X-Content-Type-Options=nosniff
+X-Total-Count=2
+X-ORACLE-DMS-RID=0:1:1
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3234e239</td></tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Authorization
+Content-Type, [+]#prev_headers_res[1]:Authorization
+application/json, {
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": 11917480,
+    "mobileNo": ""
+    
+}, 400, messageEn
+messageAr, Apologies, mobile number of traffic file should be entered
+عذراً، يجب إدخال رقم الهاتف المحمول للملف المروري, string
+string<br/>
+<a href="#Output-1351753414" onClick='toggleBox("Output-1351753414", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1351753414" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1351753414">
+Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/86896",
+    "errorCategory": "102",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number",
+    "redirectUri": "",
+    "errorType": "201",
+    "validationType": "WARNING",
+    "messageEn": "Apologies, mobile number of traffic file should be entered",
+    "messageAr": "عذراً، يجب إدخال رقم الهاتف المحمول للملف المروري",
+    "systemTraceId": "DLSGW/86896"
+}</br>Response Headers:</br>Date=Tue, 14 Jan 2020 05:09:03 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1ANAswi6yGbLxI^AyW0008l_0006uQ
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3234e239</td></tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Authorization
+Content-Type, [+]#prev_headers_res[1]:Authorization
+application/json, {
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": 11917480,
+    "mobileNo": "90050263-426"
+    
+}, 400, messageEn
+messageAr, Apologies, Mobile No format should be valid for UAE mobile format  (ex: 971501234567)
+عذراً، يجب إدخال رقم الموبايل بالطريقة الصحيحة (مثال: 971501234567), string
+string<br/>
+<a href="#Output-133181078" onClick='toggleBox("Output-133181078", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-133181078" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-133181078">
+Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/86897",
+    "errorCategory": "102",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number",
+    "redirectUri": "",
+    "errorType": "201",
+    "validationType": "WARNING",
+    "messageEn": "Apologies, Mobile No format should be valid for UAE mobile format  (ex: 971501234567)",
+    "messageAr": "عذراً، يجب إدخال رقم الموبايل بالطريقة الصحيحة (مثال: 971501234567)",
+    "systemTraceId": "DLSGW/86897"
+}</br>Response Headers:</br>Date=Tue, 14 Jan 2020 05:09:03 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005b1ANBwCK6yGbLxI^AyW0008l_0004JH
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3234e239</td></tr>
+</table><p>
+</body>
+</html>

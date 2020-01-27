@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code">
+              <span class="suite-name border-failed">DLS-700 - Load Customer profile using traffic code</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-DLS-700_-_Load_Customer_profile_using_traffic_code">
+                    <span>D:\JAR\Apis-Testing-Framework\runner.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-DLS-700_-_Load_Customer_profile_using_traffic_code">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-DLS-700_-_Load_Customer_profile_using_traffic_code">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-DLS-700_-_Load_Customer_profile_using_traffic_code">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-DLS-700_-_Load_Customer_profile_using_traffic_code">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-DLS-700_-_Load_Customer_profile_using_traffic_code">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-DLS-700_-_Load_Customer_profile_using_traffic_code">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" class="hide-methods failed suite-DLS-700_-_Load_Customer_profile_using_traffic_code"> (hide)</a> <!-- hide-methods failed suite-DLS-700_-_Load_Customer_profile_using_traffic_code -->
+                      <a href="#" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" class="show-methods failed suite-DLS-700_-_Load_Customer_profile_using_traffic_code"> (show)</a> <!-- show-methods failed suite-DLS-700_-_Load_Customer_profile_using_traffic_code -->
+                    </span>
+                    <div class="method-list-content failed suite-DLS-700_-_Load_Customer_profile_using_traffic_code">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" title="ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation" hash-for-method="test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-DLS-700_-_Load_Customer_profile_using_traffic_code -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" class="hide-methods passed suite-DLS-700_-_Load_Customer_profile_using_traffic_code"> (hide)</a> <!-- hide-methods passed suite-DLS-700_-_Load_Customer_profile_using_traffic_code -->
+                      <a href="#" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" class="show-methods passed suite-DLS-700_-_Load_Customer_profile_using_traffic_code"> (show)</a> <!-- show-methods passed suite-DLS-700_-_Load_Customer_profile_using_traffic_code -->
+                    </span>
+                    <div class="method-list-content passed suite-DLS-700_-_Load_Customer_profile_using_traffic_code">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" title="ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation" hash-for-method="test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" title="ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation" hash-for-method="test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" title="ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation" hash-for-method="test_steps(https://qadls:7779/dlsgw/api/sec/authenticate, POST, Content-Type, application/json, {&quot;apiKey&quot;: &quot;NY*...)">test_steps(https://qadls:7779/dlsgw/api/sec/authenticate, POST, Content-Type, application/json, {"apiKey": "NY*...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" title="ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation" hash-for-method="test_steps(https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types, GET, Authorization, [+]#prev_headers_...)">test_steps(https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types, GET, Authorization, [+]#prev_headers_...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" title="ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation" hash-for-method="test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" title="ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation" hash-for-method="test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-DLS-700_-_Load_Customer_profile_using_traffic_code -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-DLS-700_-_Load_Customer_profile_using_traffic_code" class="panel DLS-700_-_Load_Customer_profile_using_traffic_code">
+          <div class="suite-DLS-700_-_Load_Customer_profile_using_traffic_code-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)">
+                  </a> <!-- test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...) -->
+                  <span class="method-name">test_steps</span>
+                  <span class="parameters">(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Authorization
+Content-Type, [+]#prev_headers_res[1]:Authorization
+application/json, {
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo":  12050ks5a,
+    "mobileNo": "971502633426"
+    
+}, 400, messageEn
+messageAr, Apologies, please enter the traffic Number in number format
+NULL, string
+string)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: [Step 5]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1ODAxMzU5NjV9.1WBmEhPtQ3g9MBVhu85DkYSxA0uXCHQYcNCiKnNwJ7g_19-hr2RQURj0fsbvCfGi4flBbEV50Dh6HdFR-TMWtg&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+************************************************************************************
+Request body: 
+ &lt;{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;:  12050ks5a,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}&gt;
+************************************************************************************
+Expected status code: 
+400
+************************************************************************************
+Json paths to check: 
+ &lt;messageEn&gt; : &lt;string&gt; : &lt;Apologies, please enter the traffic Number in number format&gt;
+ &lt;messageAr&gt; : &lt;string&gt; : &lt;NULL&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpFiv76yGbLxI^AyW0008l_0009ZG
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;status&quot;: 400,
+    &quot;detail&quot;: &quot;JSON parse error: Unexpected character (&apos;k&apos; (code 107)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;k&apos; (code 107)): was expecting comma to separate Object entries\n at [Source: (PushbackInputStream); line: 4, column: 29]&quot;,
+    &quot;errorCategory&quot;: &quot;103&quot;,
+    &quot;path&quot;: &quot;/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&quot;
+}
+messageEn: is NULL
+ expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+<br/> java.lang.AssertionError: [Step 5]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1ODAxMzU5NjV9.1WBmEhPtQ3g9MBVhu85DkYSxA0uXCHQYcNCiKnNwJ7g_19-hr2RQURj0fsbvCfGi4flBbEV50Dh6HdFR-TMWtg&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+************************************************************************************
+Request body: 
+ &lt;{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;:  12050ks5a,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}&gt;
+************************************************************************************
+Expected status code: 
+400
+************************************************************************************
+Json paths to check: 
+ &lt;messageEn&gt; : &lt;string&gt; : &lt;Apologies, please enter the traffic Number in number format&gt;
+ &lt;messageAr&gt; : &lt;string&gt; : &lt;NULL&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpFiv76yGbLxI^AyW0008l_0009ZG
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;status&quot;: 400,
+    &quot;detail&quot;: &quot;JSON parse error: Unexpected character (&apos;k&apos; (code 107)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;k&apos; (code 107)): was expecting comma to separate Object entries\n at [Source: (PushbackInputStream); line: 4, column: 29]&quot;,
+    &quot;errorCategory&quot;: &quot;103&quot;,
+    &quot;path&quot;: &quot;/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&quot;
+}
+messageEn: is NULL
+ expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.assertNotNull(Assert.java:404)<br>ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:188)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DLS-700_-_Load_Customer_profile_using_traffic_code-class-failed -->
+          <div class="suite-DLS-700_-_Load_Customer_profile_using_traffic_code-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)">
+                  </a> <!-- test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...) -->
+                  <span class="method-name">test_steps</span>
+                  <span class="parameters">(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Authorization
+Content-Type, [+]#prev_headers_res[1]:Authorization
+application/json, {
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": 11917480,
+    "mobileNo": "90050263-426"
+    
+}, 400, messageEn
+messageAr, Apologies, Mobile No format should be valid for UAE mobile format  (ex: 971501234567)
+عذراً، يجب إدخال رقم الموبايل بالطريقة الصحيحة (مثال: 971501234567), string
+string)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)">
+                  </a> <!-- test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...) -->
+                  <span class="method-name">test_steps</span>
+                  <span class="parameters">(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Authorization
+Content-Type, [+]#prev_headers_res[1]:Authorization
+application/json, {
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": null,
+    "mobileNo": "971502633426"
+    
+}, 400, messageEn
+messageAr, Apologies, Traffic file should be entered
+NULL, string
+string)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_steps(https://qadls:7779/dlsgw/api/sec/authenticate, POST, Content-Type, application/json, {&quot;apiKey&quot;: &quot;NY*...)">
+                  </a> <!-- test_steps(https://qadls:7779/dlsgw/api/sec/authenticate, POST, Content-Type, application/json, {"apiKey": "NY*...) -->
+                  <span class="method-name">test_steps</span>
+                  <span class="parameters">(https://qadls:7779/dlsgw/api/sec/authenticate, POST, Content-Type, application/json, {"apiKey": "NY*p.p>93^P6<!s[Q7`(X5)Jc8kWD*:fJ[B)db#UXe)??Ttjx]",
+"username":"anonymous_user"
+	}
+	
+, 200, id_token, NULL, string)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_steps(https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types, GET, Authorization, [+]#prev_headers_...)">
+                  </a> <!-- test_steps(https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types, GET, Authorization, [+]#prev_headers_...) -->
+                  <span class="method-name">test_steps</span>
+                  <span class="parameters">(https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types, GET, Authorization, [+]#prev_headers_res[1]:Authorization, , 200, , , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)">
+                  </a> <!-- test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...) -->
+                  <span class="method-name">test_steps</span>
+                  <span class="parameters">(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Authorization
+Content-Type, [+]#prev_headers_res[1]:Authorization
+application/json, {
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": 1191,
+    "mobileNo": "971502633426"
+    
+}, 400, messageEn
+messageAr, Apologies, Traffic file number is number of 8 digits starts with 1 or 5
+NULL, string
+string)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)">
+                  </a> <!-- test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...) -->
+                  <span class="method-name">test_steps</span>
+                  <span class="parameters">(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Authorization
+Content-Type, [+]#prev_headers_res[1]:Authorization
+application/json, {
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": 11917480,
+    "mobileNo": ""
+    
+}, 400, messageEn
+messageAr, Apologies, mobile number of traffic file should be entered
+NULL, string
+string)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DLS-700_-_Load_Customer_profile_using_traffic_code-class-passed -->
+        </div> <!-- panel DLS-700_-_Load_Customer_profile_using_traffic_code -->
+        <div panel-name="test-xml-DLS-700_-_Load_Customer_profile_using_traffic_code" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\JAR\Apis-Testing-Framework\runner.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;3&quot; name=&quot;DLS-700 - Load Customer profile using traffic code&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test name=&quot;Load profile by traffic code validations&quot;&gt;
+    &lt;parameter name=&quot;XmlFile&quot; value=&quot;Scripts/Negative Scenarios UserStory 700.xml&quot;/&gt;
+    &lt;parameter name=&quot;FileFormat&quot; value=&quot;XML&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Load profile by traffic code validations --&gt;
+&lt;/suite&gt; &lt;!-- DLS-700 - Load Customer profile using traffic code --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-DLS-700_-_Load_Customer_profile_using_traffic_code" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for DLS-700 - Load Customer profile using traffic code</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Load profile by traffic code validations (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-DLS-700_-_Load_Customer_profile_using_traffic_code" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for DLS-700 - Load Customer profile using traffic code</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-DLS-700_-_Load_Customer_profile_using_traffic_code" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for DLS-700 - Load Customer profile using traffic code</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_DLS-700_-_Load_Customer_profile_using_traffic_code');
+function tableData_DLS-700_-_Load_Customer_profile_using_traffic_code() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_steps')
+data.setCell(0, 2, 'ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation')
+data.setCell(0, 3, 2387);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_steps')
+data.setCell(1, 2, 'ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation')
+data.setCell(1, 3, 1349);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_steps')
+data.setCell(2, 2, 'ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation')
+data.setCell(2, 3, 339);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_steps')
+data.setCell(3, 2, 'ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation')
+data.setCell(3, 3, 246);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_steps')
+data.setCell(4, 2, 'ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation')
+data.setCell(4, 3, 242);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_steps')
+data.setCell(5, 2, 'ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation')
+data.setCell(5, 3, 210);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test_steps')
+data.setCell(6, 2, 'ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation')
+data.setCell(6, 3, 135);
+window.suiteTableData['DLS-700_-_Load_Customer_profile_using_traffic_code']= { tableData: data, tableDiv: 'times-div-DLS-700_-_Load_Customer_profile_using_traffic_code'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-DLS-700_-_Load_Customer_profile_using_traffic_code">
+              </div> <!-- times-div-DLS-700_-_Load_Customer_profile_using_traffic_code -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-DLS-700_-_Load_Customer_profile_using_traffic_code" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for DLS-700 - Load Customer profile using traffic code</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/87934",
+    "errorCategory": "102",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number",
+    "redirectUri": "",
+    "errorType": "201",
+    "validationType": "WARNING",
+    "messageEn": "Apologies, Mobile No format should be valid for UAE mobile format  (ex: 971501234567)",
+    "messageAr": "عذراً، يجب إدخال رقم الموبايل بالطريقة الصحيحة (مثال: 971501234567)",
+    "systemTraceId": "DLSGW/87934"
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpHCB06yGbLxI^AyW0008l_000BIX
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/87931",
+    "errorCategory": "102",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number",
+    "redirectUri": "",
+    "errorType": "201",
+    "validationType": "WARNING",
+    "messageEn": "Apologies, Traffic file should be entered",
+    "messageAr": "عذراً، يجب إدخال رقم الملف المروري",
+    "systemTraceId": "DLSGW/87931"
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:27 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpDcW^6yGbLxI^AyW0008l_0009ZF
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_steps(https://qadls:7779/dlsgw/api/sec/authenticate, POST, Content-Type, application/json, {"apiKey": "NY*...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Status Code :200</br> Response Body:</br>{
+    "id_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1ODAxMzU5NjV9.1WBmEhPtQ3g9MBVhu85DkYSxA0uXCHQYcNCiKnNwJ7g_19-hr2RQURj0fsbvCfGi4flBbEV50Dh6HdFR-TMWtg",
+    "tokenExpiry": "2020-01-27T18:39:25.000+0400",
+    "authorities": [
+        {
+            "authority": "ROLE_ANONYMOUS"
+        }
+    ]
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:25 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+X-ORACLE-DMS-RID=0:1
+X-Content-Type-Options=nosniff
+X-ORACLE-DMS-ECID=005bGjp3JMJ6yGbLxI^AyW0008l_0009ZD
+Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1ODAxMzU5NjV9.1WBmEhPtQ3g9MBVhu85DkYSxA0uXCHQYcNCiKnNwJ7g_19-hr2RQURj0fsbvCfGi4flBbEV50Dh6HdFR-TMWtg
+X-XSS-Protection=1; mode=block
+X-Frame-Options=SAMEORIGIN
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_steps(https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types, GET, Authorization, [+]#prev_headers_...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Status Code :200</br> Response Body:</br>[
+    {
+        "id": 1,
+        "code": "1",
+        "description": {
+            "ar": "خدمات رخص القيادة",
+            "en": "Driving License Services"
+        },
+        "summary": {
+            "ar": "من خلال هذه الخدمة يمكنك إجراء العديد من الإجراءات مثل التقدم للحصول على رخصة قيادة جديدة, إستبدال رخصتك الأجنبية, إضافة فئة جديدة على رخصتك السابقة كما يمكنك التقدم بالحصول على شهادة خبرة بقيادة المركبات  ",
+            "en": "Use this service if you wish to obtain new UAE driving license, exchange your foreign driving license, add new category to your existing driving license or request for driving experience certificate"
+        },
+        "status": "ACTIVE",
+        "sortOrder": 1,
+        "services": [
+            {
+                "id": 1,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.LearningFileServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.LearningFileDetailDTO",
+                "code": 1,
+                "name": {
+                    "ar": "فتح ملف تعلم",
+                    "en": "Open Driving Learning File"
+                }
+            },
+            {
+                "id": 2,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingTestAppointmentServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingTestAppointmentDTO",
+                "code": 2,
+                "name": {
+                    "ar": "إصدار موعد فحص",
+                    "en": "Issue Driving Test Appointment"
+                }
+            },
+            {
+                "id": 3,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingTestAppointmentServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingTestAppointmentDTO",
+                "code": 3,
+                "name": {
+                    "ar": "تعديل موعد فحص",
+                    "en": "Update Driving Test Appointment"
+                }
+            },
+            {
+                "id": 4,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingTestAppointmentServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingTestAppointmentDTO",
+                "code": 4,
+                "name": {
+                    "ar": "إلغاء موعد فحص",
+                    "en": "Cancel Driving Test Appointment"
+                }
+            },
+            {
+                "id": 5,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.ForeignLicenseServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.ForeignLicenseDetailDTO",
+                "code": 5,
+                "name": {
+                    "ar": "تعريف رخصة قيادة سابقة",
+                    "en": "Define Foreign Driving License"
+                }
+            },
+            {
+                "id": 6,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.TrafficFileServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.TrafficFileDTO",
+                "code": 6,
+                "name": {
+                    "ar": "صرف رمز مروري في دبي",
+                    "en": "Issue Dubai Traffic Code"
+                }
+            },
+            {
+                "id": 7,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.HandbookServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.HandbookDetailDTO",
+                "code": 7,
+                "name": {
+                    "ar": "شراء كتيب تعلم",
+                    "en": "Buy hand book"
+                }
+            },
+            {
+                "id": 8,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingLicenseServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingLicenseDetailDTO",
+                "code": 8,
+                "name": {
+                    "ar": "إصدار رخصة قيادة",
+                    "en": "Issue driving license"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "code": "2",
+        "description": {
+            "ar": "خدمات تصاريح القيادة المهنية",
+            "en": "Professional Driving Permit Service"
+        },
+        "summary": {
+            "ar": "القدم للحصول على تصريح قيادة صحراوية, الخ",
+            "en": "Apply for desert driving permits, etc."
+        },
+        "status": "UNDER_DEVELOPMENT",
+        "sortOrder": 2
+    }
+]</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:26 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjp8Us86yGbLxI^AyW0008l_0009ZE
+X-ORACLE-DMS-ECID=005bGjp8Us86yGbLxI^AyW0008l_0009ZE
+X-XSS-Protection=1; mode=block
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Link=</api/sct/application-types?page=0&size=20>; rel="last",</api/sct/application-types?page=0&size=20>; rel="first"
+X-Content-Type-Options=nosniff
+X-Total-Count=2
+X-ORACLE-DMS-RID=0:1:1
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/87932",
+    "errorCategory": "102",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number",
+    "redirectUri": "",
+    "errorType": "201",
+    "validationType": "WARNING",
+    "messageEn": "Apologies, Traffic file number is number of 8 digits starts with 1 or 5",
+    "messageAr": "عذراً، ملف المرور يجب أن يكون رقم من 8 خانات يبدأ بـ 1 أو 5",
+    "systemTraceId": "DLSGW/87932"
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+X-ORACLE-DMS-RID=0:1
+X-Content-Type-Options=nosniff
+X-ORACLE-DMS-ECID=005bGjpEuWX6yGbLxI^AyW0008l_000BIW
+X-XSS-Protection=1; mode=block
+X-Frame-Options=SAMEORIGIN
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/87933",
+    "errorCategory": "102",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number",
+    "redirectUri": "",
+    "errorType": "201",
+    "validationType": "WARNING",
+    "messageEn": "Apologies, mobile number of traffic file should be entered",
+    "messageAr": "عذراً، يجب إدخال رقم الهاتف المحمول للملف المروري",
+    "systemTraceId": "DLSGW/87933"
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpGGCT6yGbLxI^AyW0008l_0009ZH
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "JSON parse error: Unexpected character ('k' (code 107)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('k' (code 107)): was expecting comma to separate Object entries\n at [Source: (PushbackInputStream); line: 4, column: 29]",
+    "errorCategory": "103",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number"
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpFiv76yGbLxI^AyW0008l_0009ZG
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-DLS-700_-_Load_Customer_profile_using_traffic_code" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-DLS-700_-_Load_Customer_profile_using_traffic_code" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp([TestResult name=test_steps status=SUCCESS method=CorrelationTCs_ValuesValidation.test_steps(java.la...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_steps(https://qadls:7779/dlsgw/api/sec/authenticate, POST, Content-Type, application/json, {"apiKey": "NY*...)</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp([TestResult name=test_steps status=SUCCESS method=CorrelationTCs_ValuesValidation.test_steps(java.la...)</span>
+                <span class="method-start">2460 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_steps(https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types, GET, Authorization, [+]#prev_headers_...)</span>
+                <span class="method-start">2460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp([TestResult name=test_steps status=SUCCESS method=CorrelationTCs_ValuesValidation.test_steps(java.la...)</span>
+                <span class="method-start">3811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</span>
+                <span class="method-start">3814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp([TestResult name=test_steps status=SUCCESS method=CorrelationTCs_ValuesValidation.test_steps(java.la...)</span>
+                <span class="method-start">4154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</span>
+                <span class="method-start">4155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp([TestResult name=test_steps status=FAILURE method=CorrelationTCs_ValuesValidation.test_steps(java.la...)</span>
+                <span class="method-start">4366 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</span>
+                <span class="method-start">4368 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp([TestResult name=test_steps status=SUCCESS method=CorrelationTCs_ValuesValidation.test_steps(java.la...)</span>
+                <span class="method-start">4506 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</span>
+                <span class="method-start">4507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp([TestResult name=test_steps status=SUCCESS method=CorrelationTCs_ValuesValidation.test_steps(java.la...)</span>
+                <span class="method-start">4754 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_steps(https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number, POST, Au...)</span>
+                <span class="method-start">4755 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

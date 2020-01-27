@@ -1,0 +1,670 @@
+<html>
+<head>
+<title>TestNG:  testAuthentication</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>testAuthentication</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 12 10:38:23 GST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1961 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/api/sec/authenticate, POST, Content-Type, application/json, {"apiKey": "NY*p.p>93^P6<!s[Q7`(X5)Jc8kWD*:fJ[B)db#UXe)??Ttjx]",
+"username":"anonymous_user"
+	}
+	
+, 200, id_token, NULL, string<br/>
+<a href="#Output-1502398177" onClick='toggleBox("Output-1502398177", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1502398177" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1502398177">
+Status Code :500</br> Response Body:</br>{
+    "timestamp": "2020-01-12T10:36:38.174+0400",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "No data element Found",
+    "path": "/dlsgw/api/sec/authenticate"
+}</br>Response Headers:</br>Date=Sun, 12 Jan 2020 06:36:38 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+X-ORACLE-DMS-ECID=005ayiKhSZd6yGbLxI^AyW0008l_0004M8
+X-ORACLE-DMS-RID=0:1
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: [Step 1]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/sec/authenticate&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+************************************************************************************
+Request body: 
+ &lt;{&quot;apiKey&quot;: &quot;NY*p.p&gt;93^P6&lt;!s[Q7`(X5)Jc8kWD*:fJ[B)db#UXe)??Ttjx]&quot;,
+&quot;username&quot;:&quot;anonymous_user&quot;
+	}
+	
+&gt;
+************************************************************************************
+Expected status code: 
+200
+************************************************************************************
+Json paths to check: 
+ &lt;id_token&gt; : &lt;string&gt; : &lt;NULL&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Sun, 12 Jan 2020 06:36:38 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+X-ORACLE-DMS-ECID=005ayiKhSZd6yGbLxI^AyW0008l_0004M8
+X-ORACLE-DMS-RID=0:1
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;timestamp&quot;: &quot;2020-01-12T10:36:38.174+0400&quot;,
+    &quot;status&quot;: 500,
+    &quot;error&quot;: &quot;Internal Server Error&quot;,
+    &quot;message&quot;: &quot;No data element Found&quot;,
+    &quot;path&quot;: &quot;/dlsgw/api/sec/authenticate&quot;
+}
+ expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1502398177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1502398177'><pre>java.lang.AssertionError: [Step 1]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/sec/authenticate&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+************************************************************************************
+Request body: 
+ &lt;{&quot;apiKey&quot;: &quot;NY*p.p&gt;93^P6&lt;!s[Q7`(X5)Jc8kWD*:fJ[B)db#UXe)??Ttjx]&quot;,
+&quot;username&quot;:&quot;anonymous_user&quot;
+	}
+	
+&gt;
+************************************************************************************
+Expected status code: 
+200
+************************************************************************************
+Json paths to check: 
+ &lt;id_token&gt; : &lt;string&gt; : &lt;NULL&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Sun, 12 Jan 2020 06:36:38 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+X-ORACLE-DMS-ECID=005ayiKhSZd6yGbLxI^AyW0008l_0004M8
+X-ORACLE-DMS-RID=0:1
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;timestamp&quot;: &quot;2020-01-12T10:36:38.174+0400&quot;,
+    &quot;status&quot;: 500,
+    &quot;error&quot;: &quot;Internal Server Error&quot;,
+    &quot;message&quot;: &quot;No data element Found&quot;,
+    &quot;path&quot;: &quot;/dlsgw/api/sec/authenticate&quot;
+}
+ expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>1</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3dfc5fb8</td></tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types, GET, Authorization, [+]#prev_headers_res[1]:Authorization, , 200, , , <br/>
+<a href="#Output-2049015276" onClick='toggleBox("Output-2049015276", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2049015276" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2049015276">
+Status Code :500</br> Response Body:</br>{
+    "status": 500,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/86773",
+    "errorCategory": "103",
+    "path": "/dlsgw/error",
+    "systemTraceId": "DLSGW/86773"
+}</br>Response Headers:</br>Date=Sun, 12 Jan 2020 06:36:38 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005ayiKiD8H6yGbLxI^AyW0008l_0006sM
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: [Step 2]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types&gt;
+************************************************************************************
+Request type: 
+ &lt;GET&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;null&gt;
+************************************************************************************
+Request body: 
+ &lt;&gt;
+************************************************************************************
+Expected status code: 
+200
+************************************************************************************
+Json paths to check: 
+N/A
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Sun, 12 Jan 2020 06:36:38 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005ayiKiD8H6yGbLxI^AyW0008l_0006sM
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;status&quot;: 500,
+    &quot;detail&quot;: &quot;You can track your problem with support team using system trace reference number: DLSGW/86773&quot;,
+    &quot;errorCategory&quot;: &quot;103&quot;,
+    &quot;path&quot;: &quot;/dlsgw/error&quot;,
+    &quot;systemTraceId&quot;: &quot;DLSGW/86773&quot;
+}
+ expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2049015276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2049015276'><pre>java.lang.AssertionError: [Step 2]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types&gt;
+************************************************************************************
+Request type: 
+ &lt;GET&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;null&gt;
+************************************************************************************
+Request body: 
+ &lt;&gt;
+************************************************************************************
+Expected status code: 
+200
+************************************************************************************
+Json paths to check: 
+N/A
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Sun, 12 Jan 2020 06:36:38 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005ayiKiD8H6yGbLxI^AyW0008l_0006sM
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;status&quot;: 500,
+    &quot;detail&quot;: &quot;You can track your problem with support team using system trace reference number: DLSGW/86773&quot;,
+    &quot;errorCategory&quot;: &quot;103&quot;,
+    &quot;path&quot;: &quot;/dlsgw/error&quot;,
+    &quot;systemTraceId&quot;: &quot;DLSGW/86773&quot;
+}
+ expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3dfc5fb8</td></tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/dlsbackend/api/trn/applications, POST, Authorization
+Content-Type, [+]#prev_headers_res[1]:Authorization
+application/json, {"applicationTypeId":1,"applicationCriteria":{"isExistingCustomer":false}}, 201, applicationReferenceNo, NULL, integer<br/>
+<a href="#Output-2140986683" onClick='toggleBox("Output-2140986683", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2140986683" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2140986683">
+Status Code :500</br> Response Body:</br>{
+    "timestamp": "2020-01-12T10:36:38.675+0400",
+    "status": 500,
+    "error": "Internal Server Error",
+    "message": "route:RequestZuulDecryptionFilter$$EnhancerBySpringCGLIB$$8a0c6245"
+}</br>Response Headers:</br>Date=Sun, 12 Jan 2020 06:36:38 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005ayiKj9KU6yGbLxI^AyW0008l_0004M9
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: [Step 3]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/dlsbackend/api/trn/applications&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;null&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+************************************************************************************
+Request body: 
+ &lt;{&quot;applicationTypeId&quot;:1,&quot;applicationCriteria&quot;:{&quot;isExistingCustomer&quot;:false}}&gt;
+************************************************************************************
+Expected status code: 
+201
+************************************************************************************
+Json paths to check: 
+ &lt;applicationReferenceNo&gt; : &lt;integer&gt; : &lt;NULL&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Sun, 12 Jan 2020 06:36:38 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005ayiKj9KU6yGbLxI^AyW0008l_0004M9
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;timestamp&quot;: &quot;2020-01-12T10:36:38.675+0400&quot;,
+    &quot;status&quot;: 500,
+    &quot;error&quot;: &quot;Internal Server Error&quot;,
+    &quot;message&quot;: &quot;route:RequestZuulDecryptionFilter$$EnhancerBySpringCGLIB$$8a0c6245&quot;
+}
+ expected [201] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2140986683", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2140986683'><pre>java.lang.AssertionError: [Step 3]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/dlsbackend/api/trn/applications&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;null&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+************************************************************************************
+Request body: 
+ &lt;{&quot;applicationTypeId&quot;:1,&quot;applicationCriteria&quot;:{&quot;isExistingCustomer&quot;:false}}&gt;
+************************************************************************************
+Expected status code: 
+201
+************************************************************************************
+Json paths to check: 
+ &lt;applicationReferenceNo&gt; : &lt;integer&gt; : &lt;NULL&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Sun, 12 Jan 2020 06:36:38 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005ayiKj9KU6yGbLxI^AyW0008l_0004M9
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;timestamp&quot;: &quot;2020-01-12T10:36:38.675+0400&quot;,
+    &quot;status&quot;: 500,
+    &quot;error&quot;: &quot;Internal Server Error&quot;,
+    &quot;message&quot;: &quot;route:RequestZuulDecryptionFilter$$EnhancerBySpringCGLIB$$8a0c6245&quot;
+}
+ expected [201] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3dfc5fb8</td></tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/dlsbackend/api/trn/applications/[+]#prev_body_integer_res[3]:applicationReferenceNo, GET, Authorization, [+]#prev_headers_res[1]:Authorization, , 200, applicationReferenceNo, NULL, integer</td>
+<td><div><pre>java.lang.NullPointerException
+	at ISOFT.APITesting.Utilities.ParsingTestData.getValue(ParsingTestData.java:48)
+	at ISOFT.APITesting.Utilities.ParsingTestData.getAllString(ParsingTestData.java:64)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace801228069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace801228069'><pre>java.lang.NullPointerException
+	at ISOFT.APITesting.Utilities.ParsingTestData.getValue(ParsingTestData.java:48)
+	at ISOFT.APITesting.Utilities.ParsingTestData.getAllString(ParsingTestData.java:64)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3dfc5fb8</td></tr>
+<tr>
+<td title='ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps()'><b>test_steps</b><br>Test class: CorrelationTCs_ValuesValidation<br>Parameters: https://qadls:7779/dlsgw/api/trn/product-offers/initial?applicationReferenceNo=[+]#prev_body_integer_res[3]:applicationReferenceNo[+]&licenseCategoryCode=VCL_ID_4&isExistingCustomer=false&hasForeignLicense=false&finalOffer=false, GET, Authorization, [+]#prev_headers_res[1]:Authorization, , 200, applicationReferenceNo, NULL, integer</td>
+<td><div><pre>java.lang.NullPointerException
+	at ISOFT.APITesting.Utilities.ParsingTestData.getValue(ParsingTestData.java:48)
+	at ISOFT.APITesting.Utilities.ParsingTestData.getAllString(ParsingTestData.java:64)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1051159524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1051159524'><pre>java.lang.NullPointerException
+	at ISOFT.APITesting.Utilities.ParsingTestData.getValue(ParsingTestData.java:48)
+	at ISOFT.APITesting.Utilities.ParsingTestData.getAllString(ParsingTestData.java:64)
+	at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation@3dfc5fb8</td></tr>
+</table><p>
+</body>
+</html>

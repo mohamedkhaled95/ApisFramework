@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="D:/POC for ApisAutomation/new.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/APITesting/out/KHALED.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="true" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <file path="/APITesting/APITesting.jar"/>
+        <file path="/APITesting/.gitignore"/>
+        <folder path="/APITesting/target"/>
+        <file path="/APITesting/BackUp"/>
+        <file path="/APITesting/.project"/>
+        <file path="/APITesting/Important KeyWords"/>
+        <file path="/APITesting/pom.xml"/>
+        <file path="/APITesting/runner.xml"/>
+        <folder path="/APITesting/out"/>
+        <folder path="/APITesting/src"/>
+        <file path="/APITesting/.classpath"/>
+        <javaElement handleIdentifier="=APITesting/src\/main\/java"/>
+        <folder path="/APITesting/allure-results"/>
+        <file path="/APITesting/APITesting.iml"/>
+        <file path="/APITesting/testng.jar"/>
+        <file path="/APITesting/jacob-1.18-x86.dll"/>
+        <file path="/APITesting/AllureReport.bat"/>
+        <file path="/APITesting/jacob-1.18-x64.dll"/>
+        <folder path="/APITesting/test-output"/>
+        <file path="/APITesting/test.txt"/>
+        <file path="/APITesting/authorized_getProducts.xml"/>
+        <file path="/APITesting/Jenkinsfile"/>
+        <file path="/APITesting/authorized_getMyAccount.xml"/>
+    </selectedElements>
+</jardesc>

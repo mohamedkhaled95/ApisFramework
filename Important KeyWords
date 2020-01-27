@@ -1,0 +1,31 @@
+----------------------------------------------------------------------------------------------------------------
+To get previous data:
+----------------------------------------------------------------------------------------------------------------
+#prev_headers_res[step]:key [+] blablabla
+#prev_body_res[step]:key [+] blablabla
+----------------------------------------------------------------------------------------------------------------
+To check returned body or headers response:
+----------------------------------------------------------------------------------------------------------------
+json: key (OR) key    -> check body
+header: key           -> check headers
+cookie: key           -> check cookie [not implemented yet]
+----------------------------------------------------------------------------------------------------------------
+KEY     		VALUE      			DATA_TYPE
+------------------------------------------------
+jws      		NULL        		  string         -->   check only jws data type
+jws             NULL        		   NULL          -->   check jws equals null
+jws             value       		  string         -->   check jws data type and its value
+jws.size()       34                    integer       --> validate that jws is arraylist with length of 34
+----------------------------------------------------------------------------------------------------------------
+/*
+		Response res = null;	
+		res = RestAssured.given()
+				.header("SOAPAction","authenticate")
+			    .header("Content-Type", "application/soap+xml").when()
+			    //.post("http://services.aonaware.com/DictService/DictService.asmx/StrategyList");
+			    .get("http://trainingrite.net/trws/trainingritemathws/trainingritemathsoapuiwebservice.asmx?WSDL");
+*/
+----------------------------------------------------------------------------------------------------------------
+
+
+		

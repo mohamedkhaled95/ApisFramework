@@ -1,0 +1,1 @@
+{"uuid":"b8f478e4-6c4c-4491-84fd-265a80bea8ac","name":"ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.SetUp","description":"","start":1580049705121,"stop":1580049705122,"children":["a66f14f6-8c71-45db-b563-60257a6db82a"],"befores":[{"name":"SetUp","status":"passed","stage":"finished","description":"","start":1580049705122,"stop":1580049705122}]}

@@ -1,0 +1,52 @@
+<Root>
+
+<test>
+<url>https://qadls:7779/dlsgw/api/sec/authenticate</url>
+<type>POST</type>
+<headerkeys>Content-Type</headerkeys>
+<headervalues>application/json</headervalues>
+<body>{"apiKey": "NY*p.p>93^P6&lt;!s[Q7`(X5)Jc8kWD*:fJ[B)db#UXe)??Ttjx]",
+"username":"anonymous_user"
+	}
+	
+</body>
+<statuscode>200</statuscode>
+<keys>id_token</keys>
+<values>NULL</values>
+<datatypes>string</datatypes>
+</test>
+
+
+<test>
+<url>https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types</url>
+<type>GET</type>
+<headerkeys>Authorization</headerkeys>
+<headervalues>[+]#prev_headers_res[1]:Authorization</headervalues>
+<body></body>
+<statuscode>200</statuscode>
+<keys></keys>
+<values></values>
+<datatypes></datatypes>
+</test>
+
+<test>
+<url>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</url>
+<type>POST</type>
+<headerkeys>Authorization
+Content-Type</headerkeys>
+<headervalues>[+]#prev_headers_res[1]:Authorization
+application/json</headervalues>
+<body>{
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": 11917480,
+    "mobileNo": "971502633426"
+    
+}</body>
+<statuscode>200</statuscode>
+<keys></keys>
+<values></values>
+<datatypes></datatypes>
+</test>
+
+</Root>

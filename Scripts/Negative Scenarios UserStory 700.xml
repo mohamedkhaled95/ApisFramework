@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Root>
+<test>
+<url>https://qadls:7779/dlsgw/api/sec/authenticate</url>
+<type>POST</type>
+<headerkeys>Content-Type</headerkeys>
+<headervalues>application/json</headervalues>
+<body>{"apiKey": "NY*p.p>93^P6&lt;!s[Q7`(X5)Jc8kWD*:fJ[B)db#UXe)??Ttjx]",
+"username":"anonymous_user"
+	}
+	
+</body>
+<statuscode>200</statuscode>
+<keys>id_token</keys>
+<values>NULL</values>
+<datatypes>string</datatypes>
+</test>
+
+
+<test>
+<url>https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types</url>
+<type>GET</type>
+<headerkeys>Authorization</headerkeys>
+<headervalues>[+]#prev_headers_res[1]:Authorization</headervalues>
+<body></body>
+<statuscode>200</statuscode>
+<keys></keys>
+<values></values>
+<datatypes></datatypes>
+</test>
+
+<test>
+<url>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</url>
+<type>POST</type>
+<headerkeys>Authorization
+Content-Type</headerkeys>
+<headervalues>[+]#prev_headers_res[1]:Authorization
+application/json</headervalues>
+<body>{
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": null,
+    "mobileNo": "971502633426"
+    
+}</body>
+<statuscode>400</statuscode>
+<keys>messageEn
+messageAr</keys>
+<values>Apologies, Traffic file should be entered
+NULL</values>
+<datatypes>string
+string</datatypes>
+</test>
+
+
+<test>
+<url>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</url>
+<type>POST</type>
+<headerkeys>Authorization
+Content-Type</headerkeys>
+<headervalues>[+]#prev_headers_res[1]:Authorization
+application/json</headervalues>
+<body>{
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": 1191,
+    "mobileNo": "971502633426"
+    
+}</body>
+<statuscode>400</statuscode>
+<keys>messageEn
+messageAr</keys>
+<values>Apologies, Traffic file number is number of 8 digits starts with 1 or 5
+NULL</values>
+<datatypes>string
+string</datatypes>
+</test>
+
+<test>
+<url>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</url>
+<type>POST</type>
+<headerkeys>Authorization
+Content-Type</headerkeys>
+<headervalues>[+]#prev_headers_res[1]:Authorization
+application/json</headervalues>
+<body>{
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo":  12050ks5a,
+    "mobileNo": "971502633426"
+    
+}</body>
+<statuscode>400</statuscode>
+<keys>messageEn
+messageAr</keys>
+<values>Apologies, please enter the traffic Number in number format
+NULL</values>
+<datatypes>string
+string</datatypes>
+</test>
+
+<test>
+<url>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</url>
+<type>POST</type>
+<headerkeys>Authorization
+Content-Type</headerkeys>
+<headervalues>[+]#prev_headers_res[1]:Authorization
+application/json</headervalues>
+<body>{
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": 11917480,
+    "mobileNo": ""
+    
+}</body>
+<statuscode>400</statuscode>
+<keys>messageEn
+messageAr</keys>
+<values>Apologies, mobile number of traffic file should be entered
+NULL</values>
+<datatypes>string
+string</datatypes>
+</test>
+
+<test>
+<url>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</url>
+<type>POST</type>
+<headerkeys>Authorization
+Content-Type</headerkeys>
+<headervalues>[+]#prev_headers_res[1]:Authorization
+application/json</headervalues>
+<body>{
+	
+	"applicationTypeRef": 1,
+    "trafficCodeNo": 11917480,
+    "mobileNo": "90050263-426"
+    
+}</body>
+<statuscode>400</statuscode>
+<keys>messageEn
+messageAr</keys>
+<values>Apologies, Mobile No format should be valid for UAE mobile format  (ex: 971501234567)
+عذراً، يجب إدخال رقم الموبايل بالطريقة الصحيحة (مثال: 971501234567)</values>
+<datatypes>string
+string</datatypes>
+</test>
+
+
+</Root>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="3" name="Failed suite [Sanity_prod]" parallel="classes">
+  <parameter name="XmlFile" value="C:\Users\mohamed.khaled\Desktop\POC for ApisAutomation\test.xml"/>
+  <parameter name="FileFormat" value="XML"/>
+  <test name="testAuthentication(failed)" parallel="classes">
+    <parameter name="XmlFile" value="C:\Users\mohamed.khaled\Desktop\POC for ApisAutomation\test.xml"/>
+    <parameter name="FileFormat" value="XML"/>
+    <classes>
+      <class name="ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation">
+        <methods>
+          <include name="test_steps" invocation-numbers="0 1 2 3 4"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- CorrelationTCs_ValuesValidation -->
+    </classes>
+  </test> <!-- testAuthentication(failed) -->
+</suite> <!-- Failed suite [Sanity_prod] -->

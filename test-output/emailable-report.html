@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Load profile by traffic code validations</td><td class="numi">7</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">7</td><td class="numi">5.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Load profile by traffic code validations &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="7">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation</td><td><a href="#m1"><b>test_steps</b>  </a></td><td class="numi">1</td><td>1580049705677</td><td class="numi">135</td></tr><tr class="failedodd"><td><a href="#m2"><b>test_steps</b>  </a></td><td class="numi">1</td><td>1580049705677</td><td class="numi">135</td></tr><tr class="failedodd"><td><a href="#m3"><b>test_steps</b>  </a></td><td class="numi">1</td><td>1580049705677</td><td class="numi">135</td></tr><tr class="failedodd"><td><a href="#m4"><b>test_steps</b>  </a></td><td class="numi">1</td><td>1580049705677</td><td class="numi">135</td></tr><tr class="failedodd"><td><a href="#m5"><b>test_steps</b>  </a></td><td class="numi">1</td><td>1580049705677</td><td class="numi">135</td></tr><tr class="failedodd"><td><a href="#m6"><b>test_steps</b>  </a></td><td class="numi">1</td><td>1580049705677</td><td class="numi">135</td></tr><tr class="failedodd"><td><a href="#m7"><b>test_steps</b>  </a></td><td class="numi">1</td><td>1580049705677</td><td class="numi">135</td></tr>
+<tr><th colspan="4">Load profile by traffic code validations &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="7">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation</td><td><a href="#m8"><b>test_steps</b>  </a></td><td class="numi">6</td><td>1580049701376</td><td class="numi">4930</td></tr><tr class="passedodd"><td><a href="#m9"><b>test_steps</b>  </a></td><td class="numi">6</td><td>1580049701376</td><td class="numi">4930</td></tr><tr class="passedodd"><td><a href="#m10"><b>test_steps</b>  </a></td><td class="numi">6</td><td>1580049701376</td><td class="numi">4930</td></tr><tr class="passedodd"><td><a href="#m11"><b>test_steps</b>  </a></td><td class="numi">6</td><td>1580049701376</td><td class="numi">4930</td></tr><tr class="passedodd"><td><a href="#m12"><b>test_steps</b>  </a></td><td class="numi">6</td><td>1580049701376</td><td class="numi">4930</td></tr><tr class="passedodd"><td><a href="#m13"><b>test_steps</b>  </a></td><td class="numi">6</td><td>1580049701376</td><td class="numi">4930</td></tr><tr class="passedodd"><td><a href="#m14"><b>test_steps</b>  </a></td><td class="numi">6</td><td>1580049701376</td><td class="numi">4930</td></tr>
+</table>
+<h1>Load profile by traffic code validations</h1>
+<h2 id="m1">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation:test_steps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr>
+<tr class="param stripe"><td>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</td>
+<td>POST</td>
+<td>Authorization
+Content-Type</td>
+<td>[+]#prev_headers_res[1]:Authorization
+application/json</td>
+<td>{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;:  12050ks5a,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}</td>
+<td>400</td>
+<td>messageEn
+messageAr</td>
+<td>Apologies, please enter the traffic Number in number format
+NULL</td>
+<td>string
+string</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="9">
+<h3>Test Messages</h3>
+Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "JSON parse error: Unexpected character ('k' (code 107)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('k' (code 107)): was expecting comma to separate Object entries\n at [Source: (PushbackInputStream); line: 4, column: 29]",
+    "errorCategory": "103",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number"
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpFiv76yGbLxI^AyW0008l_0009ZG
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json<br/>
+<h3>Failure</h3>
+<p>[Step 5]
+
+************************************************************************************
+URL: 
+ &lt;https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&gt;
+************************************************************************************
+Request type: 
+ &lt;POST&gt;
+************************************************************************************
+Headers: 
+ &lt;Authorization&gt; : &lt;Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1ODAxMzU5NjV9.1WBmEhPtQ3g9MBVhu85DkYSxA0uXCHQYcNCiKnNwJ7g_19-hr2RQURj0fsbvCfGi4flBbEV50Dh6HdFR-TMWtg&gt;
+ &lt;Content-Type&gt; : &lt;application/json&gt;
+************************************************************************************
+Request body: 
+ &lt;{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;:  12050ks5a,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}&gt;
+************************************************************************************
+Expected status code: 
+400
+************************************************************************************
+Json paths to check: 
+ &lt;messageEn&gt; : &lt;string&gt; : &lt;Apologies, please enter the traffic Number in number format&gt;
+ &lt;messageAr&gt; : &lt;string&gt; : &lt;NULL&gt;
+************************************************************************************
+The returned  response:
+
+Headers:
+Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpFiv76yGbLxI^AyW0008l_0009ZG
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json
+
+Cookies:
+{}
+
+Body:
+{
+    &quot;status&quot;: 400,
+    &quot;detail&quot;: &quot;JSON parse error: Unexpected character (&apos;k&apos; (code 107)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;k&apos; (code 107)): was expecting comma to separate Object entries\n at [Source: (PushbackInputStream); line: 4, column: 29]&quot;,
+    &quot;errorCategory&quot;: &quot;103&quot;,
+    &quot;path&quot;: &quot;/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number&quot;
+}
+messageEn: is NULL
+ expected object to not be null</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.assertNotNull(Assert.java:404)
+<br/>at ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation.test_steps(CorrelationTCs_ValuesValidation.java:188)
+<br/>14 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation:test_steps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr>
+<tr class="param stripe"><td>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</td>
+<td>POST</td>
+<td>Authorization
+Content-Type</td>
+<td>[+]#prev_headers_res[1]:Authorization
+application/json</td>
+<td>{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;: 11917480,
+    &quot;mobileNo&quot;: &quot;90050263-426&quot;
+    
+}</td>
+<td>400</td>
+<td>messageEn
+messageAr</td>
+<td>Apologies, Mobile No format should be valid for UAE mobile format  (ex: 971501234567)
+عذراً، يجب إدخال رقم الموبايل بالطريقة الصحيحة (مثال: 971501234567)</td>
+<td>string
+string</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="9">
+Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/87934",
+    "errorCategory": "102",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number",
+    "redirectUri": "",
+    "errorType": "201",
+    "validationType": "WARNING",
+    "messageEn": "Apologies, Mobile No format should be valid for UAE mobile format  (ex: 971501234567)",
+    "messageAr": "عذراً، يجب إدخال رقم الموبايل بالطريقة الصحيحة (مثال: 971501234567)",
+    "systemTraceId": "DLSGW/87934"
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpHCB06yGbLxI^AyW0008l_000BIX
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation:test_steps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr>
+<tr class="param stripe"><td>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</td>
+<td>POST</td>
+<td>Authorization
+Content-Type</td>
+<td>[+]#prev_headers_res[1]:Authorization
+application/json</td>
+<td>{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;: null,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}</td>
+<td>400</td>
+<td>messageEn
+messageAr</td>
+<td>Apologies, Traffic file should be entered
+NULL</td>
+<td>string
+string</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="9">
+Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/87931",
+    "errorCategory": "102",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number",
+    "redirectUri": "",
+    "errorType": "201",
+    "validationType": "WARNING",
+    "messageEn": "Apologies, Traffic file should be entered",
+    "messageAr": "عذراً، يجب إدخال رقم الملف المروري",
+    "systemTraceId": "DLSGW/87931"
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:27 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpDcW^6yGbLxI^AyW0008l_0009ZF
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation:test_steps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr>
+<tr class="param stripe"><td>https://qadls:7779/dlsgw/api/sec/authenticate</td>
+<td>POST</td>
+<td>Content-Type</td>
+<td>application/json</td>
+<td>{&quot;apiKey&quot;: &quot;NY*p.p&gt;93^P6&lt;!s[Q7`(X5)Jc8kWD*:fJ[B)db#UXe)??Ttjx]&quot;,
+&quot;username&quot;:&quot;anonymous_user&quot;
+	}
+	
+</td>
+<td>200</td>
+<td>id_token</td>
+<td>NULL</td>
+<td>string</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="9">
+Status Code :200</br> Response Body:</br>{
+    "id_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1ODAxMzU5NjV9.1WBmEhPtQ3g9MBVhu85DkYSxA0uXCHQYcNCiKnNwJ7g_19-hr2RQURj0fsbvCfGi4flBbEV50Dh6HdFR-TMWtg",
+    "tokenExpiry": "2020-01-27T18:39:25.000+0400",
+    "authorities": [
+        {
+            "authority": "ROLE_ANONYMOUS"
+        }
+    ]
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:25 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+X-ORACLE-DMS-RID=0:1
+X-Content-Type-Options=nosniff
+X-ORACLE-DMS-ECID=005bGjp3JMJ6yGbLxI^AyW0008l_0009ZD
+Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXNfdXNlciIsImF1dGgiOiJST0xFX0FOT05ZTU9VUyIsImNoYW5uZWxDb2RlIjoiRExTX1BPUlRBTCIsInVzZXJUeXBlIjoiQU5PTllNT1VTIiwiZW5nbGlzaFVzZXJUeXBlRGVzYyI6IkFub255bW91cyAiLCJhcmFiaWNVc2VyVHlwZURlc2MiOiLYutmK2LEg2YXYqti52KfYsdmBINi52YTZitmHIiwidXNlcklkIjoxLCJlbmdsaXNoQ3VzdG9tZXJOYW1lIjoiUGVyc29uYWwgRGF0YSBmb3IgdGVzdGluZyBwdXJwb3NlczEiLCJhcmFiaWNDdXN0b21lck5hbWUiOiLYqNmK2KfZhtin2Kog2LTYrti12YrZhyDZhNmE2KfYrtiq2KjYp9ixINmB2YLYtzEiLCJleHAiOjE1ODAxMzU5NjV9.1WBmEhPtQ3g9MBVhu85DkYSxA0uXCHQYcNCiKnNwJ7g_19-hr2RQURj0fsbvCfGi4flBbEV50Dh6HdFR-TMWtg
+X-XSS-Protection=1; mode=block
+X-Frame-Options=SAMEORIGIN
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation:test_steps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr>
+<tr class="param stripe"><td>https://qadls:7779/dlsgw/dlsbackend/api/sct/application-types</td>
+<td>GET</td>
+<td>Authorization</td>
+<td>[+]#prev_headers_res[1]:Authorization</td>
+<td></td>
+<td>200</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr><td style="padding-left:3em" colspan="9">
+Status Code :200</br> Response Body:</br>[
+    {
+        "id": 1,
+        "code": "1",
+        "description": {
+            "ar": "خدمات رخص القيادة",
+            "en": "Driving License Services"
+        },
+        "summary": {
+            "ar": "من خلال هذه الخدمة يمكنك إجراء العديد من الإجراءات مثل التقدم للحصول على رخصة قيادة جديدة, إستبدال رخصتك الأجنبية, إضافة فئة جديدة على رخصتك السابقة كما يمكنك التقدم بالحصول على شهادة خبرة بقيادة المركبات  ",
+            "en": "Use this service if you wish to obtain new UAE driving license, exchange your foreign driving license, add new category to your existing driving license or request for driving experience certificate"
+        },
+        "status": "ACTIVE",
+        "sortOrder": 1,
+        "services": [
+            {
+                "id": 1,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.LearningFileServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.LearningFileDetailDTO",
+                "code": 1,
+                "name": {
+                    "ar": "فتح ملف تعلم",
+                    "en": "Open Driving Learning File"
+                }
+            },
+            {
+                "id": 2,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingTestAppointmentServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingTestAppointmentDTO",
+                "code": 2,
+                "name": {
+                    "ar": "إصدار موعد فحص",
+                    "en": "Issue Driving Test Appointment"
+                }
+            },
+            {
+                "id": 3,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingTestAppointmentServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingTestAppointmentDTO",
+                "code": 3,
+                "name": {
+                    "ar": "تعديل موعد فحص",
+                    "en": "Update Driving Test Appointment"
+                }
+            },
+            {
+                "id": 4,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingTestAppointmentServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingTestAppointmentDTO",
+                "code": 4,
+                "name": {
+                    "ar": "إلغاء موعد فحص",
+                    "en": "Cancel Driving Test Appointment"
+                }
+            },
+            {
+                "id": 5,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.ForeignLicenseServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.ForeignLicenseDetailDTO",
+                "code": 5,
+                "name": {
+                    "ar": "تعريف رخصة قيادة سابقة",
+                    "en": "Define Foreign Driving License"
+                }
+            },
+            {
+                "id": 6,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.TrafficFileServiceImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.TrafficFileDTO",
+                "code": 6,
+                "name": {
+                    "ar": "صرف رمز مروري في دبي",
+                    "en": "Issue Dubai Traffic Code"
+                }
+            },
+            {
+                "id": 7,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.HandbookServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.HandbookDetailDTO",
+                "code": 7,
+                "name": {
+                    "ar": "شراء كتيب تعلم",
+                    "en": "Buy hand book"
+                }
+            },
+            {
+                "id": 8,
+                "status": "ACTIVE",
+                "serviceImplClass": "ae.rta.dls.backend.service.trn.impl.DrivingLicenseServiceTransactionImpl",
+                "serviceDTOClass": "ae.rta.dls.backend.service.dto.trn.DrivingLicenseDetailDTO",
+                "code": 8,
+                "name": {
+                    "ar": "إصدار رخصة قيادة",
+                    "en": "Issue driving license"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "code": "2",
+        "description": {
+            "ar": "خدمات تصاريح القيادة المهنية",
+            "en": "Professional Driving Permit Service"
+        },
+        "summary": {
+            "ar": "القدم للحصول على تصريح قيادة صحراوية, الخ",
+            "en": "Apply for desert driving permits, etc."
+        },
+        "status": "UNDER_DEVELOPMENT",
+        "sortOrder": 2
+    }
+]</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:26 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjp8Us86yGbLxI^AyW0008l_0009ZE
+X-ORACLE-DMS-ECID=005bGjp8Us86yGbLxI^AyW0008l_0009ZE
+X-XSS-Protection=1; mode=block
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Link=</api/sct/application-types?page=0&size=20>; rel="last",</api/sct/application-types?page=0&size=20>; rel="first"
+X-Content-Type-Options=nosniff
+X-Total-Count=2
+X-ORACLE-DMS-RID=0:1:1
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/json;charset=UTF-8<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation:test_steps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr>
+<tr class="param stripe"><td>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</td>
+<td>POST</td>
+<td>Authorization
+Content-Type</td>
+<td>[+]#prev_headers_res[1]:Authorization
+application/json</td>
+<td>{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;: 1191,
+    &quot;mobileNo&quot;: &quot;971502633426&quot;
+    
+}</td>
+<td>400</td>
+<td>messageEn
+messageAr</td>
+<td>Apologies, Traffic file number is number of 8 digits starts with 1 or 5
+NULL</td>
+<td>string
+string</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="9">
+Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/87932",
+    "errorCategory": "102",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number",
+    "redirectUri": "",
+    "errorType": "201",
+    "validationType": "WARNING",
+    "messageEn": "Apologies, Traffic file number is number of 8 digits starts with 1 or 5",
+    "messageAr": "عذراً، ملف المرور يجب أن يكون رقم من 8 خانات يبدأ بـ 1 أو 5",
+    "systemTraceId": "DLSGW/87932"
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+X-ORACLE-DMS-RID=0:1
+X-Content-Type-Options=nosniff
+X-ORACLE-DMS-ECID=005bGjpEuWX6yGbLxI^AyW0008l_000BIW
+X-XSS-Protection=1; mode=block
+X-Frame-Options=SAMEORIGIN
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation:test_steps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr>
+<tr class="param stripe"><td>https://qadls:7779/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number</td>
+<td>POST</td>
+<td>Authorization
+Content-Type</td>
+<td>[+]#prev_headers_res[1]:Authorization
+application/json</td>
+<td>{
+	
+	&quot;applicationTypeRef&quot;: 1,
+    &quot;trafficCodeNo&quot;: 11917480,
+    &quot;mobileNo&quot;: &quot;&quot;
+    
+}</td>
+<td>400</td>
+<td>messageEn
+messageAr</td>
+<td>Apologies, mobile number of traffic file should be entered
+NULL</td>
+<td>string
+string</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="9">
+Status Code :400</br> Response Body:</br>{
+    "status": 400,
+    "detail": "You can track your problem with support team using system trace reference number: DLSGW/87933",
+    "errorCategory": "102",
+    "path": "/dlsgw/api/trn/customer-profile-summary/load-profile/traffic-code-number",
+    "redirectUri": "",
+    "errorType": "201",
+    "validationType": "WARNING",
+    "messageEn": "Apologies, mobile number of traffic file should be entered",
+    "messageAr": "عذراً، يجب إدخال رقم الهاتف المحمول للملف المروري",
+    "systemTraceId": "DLSGW/87933"
+}</br>Response Headers:</br>Date=Sun, 26 Jan 2020 14:39:28 GMT
+X-Content-Type-Options=nosniff
+X-XSS-Protection=1; mode=block
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-ORACLE-DMS-ECID=005bGjpGGCT6yGbLxI^AyW0008l_0009ZH
+X-ORACLE-DMS-RID=0:1
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+Strict-Transport-Security=max-age=31536000 ; includeSubDomains
+Connection=close
+Transfer-Encoding=chunked
+Content-Type=application/problem+json<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

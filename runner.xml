@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="3" name="DLS-700 - Load Customer profile using traffic code" annotations="JDK" parallel="classes">
+
+	
+	
+	<test name="Load profile by traffic code validations">
+		<parameter name="FileFormat" value="XML"></parameter>
+		<parameter name="XmlFile" value="Scripts/Negative Scenarios UserStory 700.xml"></parameter>
+	  	<classes>
+				<class name="ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation"/>
+	    </classes>
+	</test>
+	
+
+	
+	</suite>

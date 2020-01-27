@@ -1,0 +1,1 @@
+{"uuid":"16b98701-0ef8-47d3-9225-2ffce0a25c08","name":"VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation.SetUp","description":"","start":1579074792146,"stop":1579074792148,"children":["abdff001-c42c-4cd5-9ab0-a4eddbfdfcf7"],"befores":[{"name":"SetUp","status":"passed","stage":"finished","description":"","start":1579074792146,"stop":1579074792148}]}

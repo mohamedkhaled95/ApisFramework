@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="3" name="Failed suite [DLS-700 - Load Customer profile using traffic code]" parallel="classes">
+  <parameter name="XmlFile" value="Scripts/Negative Scenarios UserStory 700.xml"/>
+  <parameter name="FileFormat" value="XML"/>
+  <test name="Load profile by traffic code validations(failed)" parallel="classes">
+    <parameter name="XmlFile" value="Scripts/Negative Scenarios UserStory 700.xml"/>
+    <parameter name="FileFormat" value="XML"/>
+    <classes>
+      <class name="ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation">
+        <methods>
+          <include name="test_steps" invocation-numbers="4"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- ISOFT.APITesting.TCs.CorrelationTCs_ValuesValidation -->
+    </classes>
+  </test> <!-- Load profile by traffic code validations(failed) -->
+</suite> <!-- Failed suite [DLS-700 - Load Customer profile using traffic code] -->
